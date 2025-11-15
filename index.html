@@ -1,20 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Comic zur Aufklärung über Depressionen bei Kindern</title>
+  <title>Comic: Depressionen bei Kindern</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #f0f2f5; /* dezente Pastellfarbe */
+    }
+
+    .container {
+      max-width: 900px;
+      width: 90%;
+      margin: 50px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #4A90E2;
+      color: white;
+      padding: 12px 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background: #3276c3;
+    }
+
+    embed {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+  </style>
 </head>
-<body style="font-family: sans-serif; margin: 40px;">
-  <h1>Comic: Depressionen bei Kindern</h1>
-  <p>Hier kannst du unseren Comic ansehen oder herunterladen:</p>
 
-  <a href="Studienordnung%2BSoziale%2BArbeit%2B2025_07_10.pdf" target="_blank">
-    📄 PDF jetzt öffnen
-  </a>
+<body>
+  <div class="container">
+    <h1>Comic: Depressionen bei Kindern</h1>
 
-  <br><br>
+    <a class="btn" 
+       href="Studienordnung%2BSoziale%2BArbeit%2B2025_07_10.pdf" 
+       target="_blank">
+      📄 PDF herunterladen / öffnen
+    </a>
 
-  <embed src="Studienordnung%2BSoziale%2BArbeit%2B2025_07_10.pdf"
-         width="100%" height="800px" />
+    <embed 
+      src="Studienordnung%2BSoziale%2BArbeit%2B2025_07_10.pdf"
+      width="100%" height="800px" />
+  </div>
 </body>
 </html>
