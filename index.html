@@ -46,6 +46,25 @@
       border: 1px solid #ccc;
       border-radius: 8px;
     }
+    .mobile-hint {
+  display: none;
+  font-size: 0.95em;
+  margin-bottom: 10px;
+}
+
+.desktop-only {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-hint {
+    display: block;
+  }
+}
   </style>
 </head>
 
@@ -59,9 +78,23 @@
       📄 PDF herunterladen / öffnen
     </a>
 
-    <embed 
-      src="comic_depression_kinder.pdf"
-      width="100%" height="800px" />
+<div class="pdf-wrapper">
+  <p class="mobile-hint">
+    Auf Smartphones wird das PDF aus technischen Gründen in einem neuen Fenster geöffnet.
+  </p>
+
+  <a class="btn"
+     href="comic_depression_kinder.pdf"
+     target="_blank">
+    📄 PDF auf dem Smartphone öffnen
+  </a>
+
+  <div class="desktop-only">
+    <embed src="comic_depression_kinder.pdf"
+           width="100%" height="800px" />
+  </div>
+</div>
+
   </div>
 </body>
 </html>
