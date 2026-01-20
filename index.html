@@ -2,23 +2,26 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Comic: Jens Nebel im Kopf</title>
+  <title>Comic zur Aufklärung über Depressionen bei Kindern</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: sans-serif;
-      background-color: #f0f2f5; /* dezente Pastellfarbe */
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f0f2f5;
+      color: #222;
     }
 
     .container {
       max-width: 900px;
       width: 90%;
-      margin: 50px auto;
+      margin: 40px auto;
       padding: 30px;
-      background: white;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      background-color: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
     }
 
     h1 {
@@ -26,75 +29,79 @@
       margin-top: 0;
     }
 
+    p {
+      line-height: 1.6;
+    }
+
     .btn {
       display: inline-block;
-      background: #4A90E2;
-      color: white;
+      background-color: #4A90E2;
+      color: #ffffff;
       padding: 12px 20px;
-      margin-bottom: 20px;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      text-align: center;
+      margin-bottom: 15px;
     }
 
     .btn:hover {
-      background: #3276c3;
+      background-color: #3276c3;
+    }
+
+    .mobile-hint {
+      display: none;
+      font-size: 0.95em;
+      margin-bottom: 10px;
+    }
+
+    .desktop-only {
+      display: block;
     }
 
     embed {
       border: 1px solid #ccc;
       border-radius: 8px;
     }
-    .mobile-hint {
-  display: none;
-  font-size: 0.95em;
-  margin-bottom: 10px;
-}
 
-.desktop-only {
-  display: block;
-}
+    @media (max-width: 768px) {
+      .desktop-only {
+        display: none;
+      }
 
-@media (max-width: 768px) {
-  .desktop-only {
-    display: none;
-  }
-
-  .mobile-hint {
-    display: block;
-  }
-}
+      .mobile-hint {
+        display: block;
+      }
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <h1>Comic: Depressionen bei Kindern</h1>
+    <h1>Comic zur Aufklärung über Depressionen bei Kindern</h1>
 
-    <a class="btn" 
-       href="comic_depression_kinder.pdf" 
+    <p>
+      Dieser Comic richtet sich an Kinder ab Klasse 4 sowie an Eltern und
+      pädagogische Fachkräfte. Er soll über Depressionen aufklären,
+      entstigmatisieren und auf Hilfsangebote aufmerksam machen.
+    </p>
+
+    <p class="mobile-hint">
+      Hinweis: Auf Smartphones öffnet sich das PDF aus technischen Gründen
+      in einem neuen Fenster.
+    </p>
+
+    <a class="btn"
+       href="comic_depression_kinder.pdf"
        target="_blank">
-      📄 PDF herunterladen / öffnen
+      PDF öffnen oder herunterladen
     </a>
 
-<div class="pdf-wrapper">
-  <p class="mobile-hint">
-    Auf Smartphones wird das PDF aus technischen Gründen in einem neuen Fenster geöffnet.
-  </p>
-
-  <a class="btn"
-     href="comic_depression_kinder.pdf"
-     target="_blank">
-    📄 PDF auf dem Smartphone öffnen
-  </a>
-
-  <div class="desktop-only">
-    <embed src="comic_depression_kinder.pdf"
-           width="100%" height="800px" />
-  </div>
-</div>
-
+    <div class="desktop-only">
+      <embed
+        src="comic_depression_kinder.pdf"
+        width="100%"
+        height="800">
+    </div>
   </div>
 </body>
 </html>
